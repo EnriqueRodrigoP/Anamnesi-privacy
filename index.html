@@ -173,20 +173,24 @@
     <p>Anamnesi no recopila, transmite ni vende datos personales. Todo lo que introduces se guarda cifrado únicamente en tu iPhone. La app no tiene servidores ni cuentas de usuario, no incluye publicidad, analítica ni herramientas de rastreo de terceros, y el desarrollador no puede acceder a tus expedientes.</p>
 
     <h2>3. Información que introduces en la app</h2>
-    <p>Los expedientes que creas (respuestas al cuestionario, notas clínicas, edad, sexo, fechas e identificadores) se almacenan exclusivamente en el almacenamiento local de tu dispositivo. Esta información no sale de tu iPhone salvo que tú decidas exportarla.</p>
+    <p>Los expedientes que creas (respuestas al cuestionario, notas clínicas, edad, sexo, fechas e identificadores) y las plantillas propias que diseñes se almacenan exclusivamente en el almacenamiento local de tu dispositivo. Esta información no sale de tu iPhone salvo que tú decidas exportarla.</p>
     <p>Anamnesi está diseñada para no guardar nombres de pacientes: identifica cada expediente con un código o número de historia y, además, detecta y oculta automáticamente los nombres propios que puedan escribirse en los campos de texto. Este análisis se realiza íntegramente en el dispositivo, sin enviar el texto a ningún servicio externo.</p>
 
     <h2>4. Seguridad</h2>
     <p>Los datos se cifran con AES-256-GCM y se protegen además con la protección de archivos de iOS. La clave de cifrado se guarda en el Llavero (Keychain) del dispositivo y no se transfiere a otros dispositivos. La app se bloquea automáticamente tras un periodo de inactividad, exige tu código o Face ID para abrirse, oculta su contenido en el selector de apps y limita los intentos fallidos de código.</p>
+    <p>Mientras se graba o se comparte la pantalla (por ejemplo, por AirPlay o en una videollamada), la app oculta su contenido; esta opción se puede desactivar en Ajustes. iOS no permite a las apps impedir las capturas de pantalla, por lo que la app avisa cuando se hace una.</p>
 
     <h2>5. Face ID y código de acceso</h2>
     <p>Face ID lo gestiona iOS: tus datos biométricos permanecen en el Secure Enclave del dispositivo y la app nunca accede a ellos ni los almacena; solo recibe la confirmación de si la autenticación ha sido correcta. El código de seis dígitos de la app no se guarda en texto plano: se utiliza únicamente para proteger la clave de cifrado.</p>
 
-    <h2>6. Exportación de documentos</h2>
-    <p>Si exportas un expediente a PDF o Word, el archivo se genera en tu dispositivo y eres tú quien decide, mediante el menú Compartir de iOS, dónde enviarlo o guardarlo (correo, Archivos, servicios en la nube, etc.). A partir de ese momento, el tratamiento de ese archivo depende del destino que hayas elegido y queda bajo tu responsabilidad.</p>
+    <h2>6. Exportar y compartir expedientes</h2>
+    <p>Si exportas un expediente a PDF o Word, el archivo se genera en tu dispositivo y eres tú quien decide, mediante el menú Compartir de iOS, dónde enviarlo o guardarlo (correo, Archivos, servicios en la nube, etc.). La copia temporal que crea la app se borra al terminar de compartirla. A partir de ese momento, el tratamiento del archivo depende del destino que hayas elegido y queda bajo tu responsabilidad.</p>
+    <p>También puedes exportar un expediente como archivo cifrado (.anamnesi) para que otra persona lo importe en su propia app; por ejemplo, un profesor que comparte un caso con sus alumnos. El archivo se cifra con AES-256-GCM y una clave derivada de la contraseña que tú eliges (PBKDF2-HMAC-SHA256), y sin esa contraseña no se puede leer. El desarrollador no interviene en este intercambio ni tiene acceso a los archivos ni a las contraseñas. Te recomendamos compartir solo casos ficticios o anonimizados y dar la contraseña por un canal distinto al del archivo.</p>
+    <p>Al importar uno de estos archivos se crea un expediente nuevo en tu dispositivo, que se guarda con las mismas medidas de seguridad que el resto.</p>
 
     <h2>7. Datos que no recopilamos</h2>
-    <p>La app no recopila datos de identificación, de contacto, de ubicación, de uso ni de diagnóstico; no utiliza cookies, identificadores publicitarios ni SDK de terceros; y no comparte ni vende información a terceros. Tampoco necesita conexión a internet para funcionar.</p>
+    <p>La app no recopila datos de identificación, de contacto, de ubicación, de uso ni de diagnóstico; no utiliza cookies, identificadores publicitarios ni SDK de terceros; y no comparte ni vende información a terceros. Tampoco necesita conexión a internet para funcionar: solo se conecta si abres esta política de privacidad desde la app.</p>
+    <p>Esta página está alojada en GitHub Pages. Al visitarla, GitHub registra la dirección IP del visitante por motivos de seguridad, como explica en su <a href="https://docs.github.com/en/articles/about-github-pages">documentación</a>. El desarrollador no recibe ni utiliza esos datos.</p>
 
     <h2>8. Datos tratados a través de Apple (App Store y TestFlight)</h2>
     <p>Anamnesi se distribuye a través del App Store y, durante la fase de pruebas, de TestFlight, servicios de Apple sujetos a su propia <a href="https://www.apple.com/legal/privacy/">política de privacidad</a>.</p>
@@ -202,11 +206,11 @@
     <p>Si en los Ajustes de iOS has permitido compartir datos de análisis con los desarrolladores, Apple puede facilitarnos informes de fallos y de uso. Puedes desactivarlo en Ajustes › Privacidad y seguridad › Análisis y mejoras.</p>
 
     <h2>9. Responsabilidad sobre los datos de pacientes</h2>
-    <p>Anamnesi es una herramienta de documentación para profesionales sanitarios. El profesional que la utiliza decide qué información introduce y con qué finalidad, y es el responsable del tratamiento de los datos de sus pacientes conforme al Reglamento General de Protección de Datos (RGPD), la normativa española de protección de datos y la normativa sanitaria aplicable. El desarrollador no tiene acceso a esa información ni la trata en ningún momento.</p>
+    <p>Anamnesi es una herramienta de documentación para profesionales sanitarios. El profesional que la utiliza decide qué información introduce y con qué finalidad, y es el responsable del tratamiento de los datos de sus pacientes conforme al Reglamento General de Protección de Datos (RGPD), la normativa española de protección de datos y la normativa sanitaria aplicable, también cuando decide exportar o compartir un expediente. El desarrollador no tiene acceso a esa información ni la trata en ningún momento.</p>
     <p>Anamnesi no realiza diagnósticos, no interpreta los datos introducidos ni ofrece recomendaciones clínicas.</p>
 
     <h2>10. Conservación y eliminación de los datos</h2>
-    <p>Los expedientes permanecen en tu dispositivo hasta que los elimines. Los expedientes borrados pasan a la papelera de la app durante 7 días y después se eliminan de forma definitiva; también puedes vaciar la papelera en cualquier momento. Al desinstalar la app se eliminan todos sus datos.</p>
+    <p>Los expedientes y las plantillas propias permanecen en tu dispositivo hasta que los elimines. Los expedientes borrados pasan a la papelera de la app durante 7 días y después se eliminan de forma definitiva; también puedes vaciar la papelera en cualquier momento. Al desinstalar la app se eliminan todos sus datos.</p>
     <p>Las copias de seguridad de iOS pueden incluir el archivo cifrado, pero como la clave no se transfiere a otros dispositivos, no puede abrirse fuera del iPhone en el que se creó. El desarrollador no dispone de copias de tus datos y no puede recuperarlos si se pierden.</p>
 
     <h2>11. Tus derechos</h2>
@@ -237,20 +241,24 @@
     <p>Anamnesi does not collect, transmit or sell personal data. Everything you enter is stored encrypted only on your iPhone. The app has no servers or user accounts, contains no advertising, analytics or third-party tracking tools, and the developer cannot access your records.</p>
 
     <h2>3. Information you enter in the app</h2>
-    <p>The records you create (questionnaire answers, clinical notes, age, sex, dates and identifiers) are stored exclusively in your device’s local storage. This information never leaves your iPhone unless you choose to export it.</p>
+    <p>The records you create (questionnaire answers, clinical notes, age, sex, dates and identifiers) and any custom templates you design are stored exclusively in your device’s local storage. This information never leaves your iPhone unless you choose to export it.</p>
     <p>Anamnesi is designed not to store patient names: each record is identified by a code or record number, and the app also automatically detects and hides personal names typed into text fields. This analysis happens entirely on the device, without sending the text to any external service.</p>
 
     <h2>4. Security</h2>
     <p>Data is encrypted with AES-256-GCM and additionally protected by iOS file protection. The encryption key is stored in the device’s Keychain and is never transferred to other devices. The app locks automatically after a period of inactivity, requires your code or Face ID to open, hides its content in the app switcher and limits failed code attempts.</p>
+    <p>While the screen is being recorded or shared (for example via AirPlay or in a video call), the app hides its content; this can be turned off in Settings. iOS does not allow apps to block screenshots, so the app warns you when one is taken.</p>
 
     <h2>5. Face ID and passcode</h2>
     <p>Face ID is handled by iOS: your biometric data stays in the device’s Secure Enclave and the app never accesses or stores it; it only receives confirmation of whether authentication succeeded. The app’s six-digit code is not stored in plain text: it is used only to protect the encryption key.</p>
 
-    <h2>6. Exporting documents</h2>
-    <p>If you export a record to PDF or Word, the file is generated on your device and you decide, through the iOS Share menu, where to send or save it (email, Files, cloud services, etc.). From then on, how that file is handled depends on the destination you chose and is your responsibility.</p>
+    <h2>6. Exporting and sharing records</h2>
+    <p>If you export a record to PDF or Word, the file is generated on your device and you decide, through the iOS Share menu, where to send or save it (email, Files, cloud services, etc.). The temporary copy created by the app is deleted once you finish sharing it. From then on, how the file is handled depends on the destination you chose and is your responsibility.</p>
+    <p>You can also export a record as an encrypted file (.anamnesi) so that someone else can import it into their own app; for example, a lecturer sharing a case with students. The file is encrypted with AES-256-GCM using a key derived from the password you choose (PBKDF2-HMAC-SHA256), and it cannot be read without that password. The developer takes no part in this exchange and has no access to the files or passwords. We recommend sharing only fictitious or anonymised cases and giving the password through a different channel from the file.</p>
+    <p>Importing one of these files creates a new record on your device, stored with the same security measures as the rest.</p>
 
     <h2>7. Data we do not collect</h2>
-    <p>The app does not collect identifiers, contact details, location, usage or diagnostic data; it does not use cookies, advertising identifiers or third-party SDKs; and it does not share or sell information to third parties. It also does not need an internet connection to work.</p>
+    <p>The app does not collect identifiers, contact details, location, usage or diagnostic data; it does not use cookies, advertising identifiers or third-party SDKs; and it does not share or sell information to third parties. It also does not need an internet connection to work: it only connects if you open this privacy policy from the app.</p>
+    <p>This page is hosted on GitHub Pages. When it is visited, GitHub logs the visitor’s IP address for security purposes, as explained in its <a href="https://docs.github.com/en/articles/about-github-pages">documentation</a>. The developer does not receive or use that data.</p>
 
     <h2>8. Data handled through Apple (App Store and TestFlight)</h2>
     <p>Anamnesi is distributed through the App Store and, during the testing phase, TestFlight, which are Apple services subject to Apple’s own <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.</p>
@@ -266,11 +274,11 @@
     <p>If you have allowed sharing analytics with app developers in iOS Settings, Apple may provide us with crash and usage reports. You can turn this off in Settings › Privacy &amp; Security › Analytics &amp; Improvements.</p>
 
     <h2>9. Responsibility for patient data</h2>
-    <p>Anamnesi is a documentation tool for healthcare professionals. The professional using it decides what information to enter and for what purpose, and is the controller of their patients’ data under the General Data Protection Regulation (GDPR), Spanish data protection law and applicable healthcare regulations. The developer has no access to that information and does not process it at any time.</p>
+    <p>Anamnesi is a documentation tool for healthcare professionals. The professional using it decides what information to enter and for what purpose, and is the controller of their patients’ data under the General Data Protection Regulation (GDPR), Spanish data protection law and applicable healthcare regulations, including when they choose to export or share a record. The developer has no access to that information and does not process it at any time.</p>
     <p>Anamnesi does not make diagnoses, interpret the data entered or provide clinical recommendations.</p>
 
     <h2>10. Data retention and deletion</h2>
-    <p>Records stay on your device until you delete them. Deleted records go to the app’s trash for 7 days and are then permanently deleted; you can also empty the trash at any time. Uninstalling the app deletes all of its data.</p>
+    <p>Records and custom templates stay on your device until you delete them. Deleted records go to the app’s trash for 7 days and are then permanently deleted; you can also empty the trash at any time. Uninstalling the app deletes all of its data.</p>
     <p>iOS backups may include the encrypted file, but because the key is never transferred to other devices, it cannot be opened outside the iPhone on which it was created. The developer has no copies of your data and cannot recover it if it is lost.</p>
 
     <h2>11. Your rights</h2>
