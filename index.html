@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anamnesi · Política de privacidad / Privacy Policy</title>
+<meta name="description" content="Política de privacidad de Anamnesi, app de historia clínica para iPhone. Privacy policy for Anamnesi, a clinical records app for iPhone.">
+<style>
+  :root {
+    --paper: #FBFCFB;
+    --ink: #13201D;
+    --muted: #5E716C;
+    --rule: #DCE6E3;
+    --accent: #0E7C6B;
+    --accent-soft: #E4F2EF;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0F1715;
+      --ink: #E6EEEB;
+      --muted: #93A6A0;
+      --rule: #22312D;
+      --accent: #3FB59F;
+      --accent-soft: #15302A;
+      color-scheme: dark;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 24px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", Charter, "Palatino Linotype", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .sans {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px 72px;
+  }
+
+  /* Cabecera */
+  header { margin-bottom: 12px; }
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .brand-name {
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--accent);
+    letter-spacing: 0.2px;
+    text-decoration: none;
+  }
+  .langs { font-size: 15px; color: var(--muted); }
+  .langs a { color: var(--muted); text-decoration: none; padding: 4px 2px; }
+  .langs a:hover, .langs a:focus-visible { color: var(--accent); }
+  .pulse {
+    display: block;
+    width: 100%;
+    height: 44px;
+    margin: 18px 0 8px;
+  }
+  .pulse path {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+    animation: trace 1.6s ease-out 0.2s forwards;
+  }
+  @keyframes trace { to { stroke-dashoffset: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse path { animation: none; stroke-dashoffset: 0; }
+  }
+
+  /* Documento */
+  .doc + .doc {
+    margin-top: 72px;
+    padding-top: 40px;
+    border-top: 1px solid var(--rule);
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0 0 10px;
+  }
+  .updated { font-size: 15px; color: var(--muted); margin: 0 0 28px; }
+  .lead {
+    font-size: 21px;
+    line-height: 1.55;
+    margin: 0 0 40px;
+    padding-left: 18px;
+    border-left: 3px solid var(--accent);
+  }
+  h2 {
+    font-size: 19px;
+    line-height: 1.35;
+    font-weight: 650;
+    color: var(--accent);
+    margin: 36px 0 8px;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .note {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 6px 0 16px;
+  }
+  .email { white-space: nowrap; font-weight: 600; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  @media (max-width: 520px) {
+    body { font-size: 17px; }
+    main { padding: 28px 20px 56px; }
+    h1 { font-size: 32px; }
+    .lead { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand sans">
+      <span class="brand-name">Anamnesi</span>
+      <nav class="langs" aria-label="Idioma / Language">
+        <a href="#es" lang="es">Español</a> | <a href="#en" lang="en">English</a>
+      </nav>
+    </div>
+    <svg class="pulse" viewBox="0 0 680 44" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 22 H300 L312 22 L320 6 L332 38 L342 12 L350 22 H680"/>
+    </svg>
+  </header>
+
+  <!-- ===================== ESPAÑOL ===================== -->
+  <article class="doc" id="es" lang="es">
+    <h1>Política de privacidad</h1>
+    <p class="updated sans">Última actualización: 24 de octubre de 2026</p>
+
+    <p class="lead">Anamnesi guarda todo lo que escribes cifrado y únicamente en tu iPhone. No hay servidores, no hay cuentas y nadie, tampoco el desarrollador, puede acceder a tus expedientes.</p>
+
+    <h2>1. Quién es el responsable</h2>
+    <p>Anamnesi es una aplicación para iPhone desarrollada por Enrique Rodrigo, desarrollador independiente con residencia en España (en adelante, «el desarrollador» o «nosotros»). Puedes contactar con nosotros en <a class="email" href="mailto:enriquerodrigopardo@gmail.com">enriquerodrigopardo@gmail.com</a> para cualquier cuestión relacionada con esta política.</p>
+
+    <h2>2. Resumen</h2>
+    <p>Anamnesi no recopila, transmite ni vende datos personales. Todo lo que introduces se guarda cifrado únicamente en tu iPhone. La app no tiene servidores ni cuentas de usuario, no incluye publicidad, analítica ni herramientas de rastreo de terceros, y el desarrollador no puede acceder a tus expedientes.</p>
+
+    <h2>3. Información que introduces en la app</h2>
+    <p>Los expedientes que creas (respuestas al cuestionario, notas clínicas, edad, sexo, fechas e identificadores) se almacenan exclusivamente en el almacenamiento local de tu dispositivo. Esta información no sale de tu iPhone salvo que tú decidas exportarla.</p>
+    <p>Anamnesi está diseñada para no guardar nombres de pacientes: identifica cada expediente con un código o número de historia y, además, detecta y oculta automáticamente los nombres propios que puedan escribirse en los campos de texto. Este análisis se realiza íntegramente en el dispositivo, sin enviar el texto a ningún servicio externo.</p>
+
+    <h2>4. Seguridad</h2>
+    <p>Los datos se cifran con AES-256-GCM y se protegen además con la protección de archivos de iOS. La clave de cifrado se guarda en el Llavero (Keychain) del dispositivo y no se transfiere a otros dispositivos. La app se bloquea automáticamente tras un periodo de inactividad, exige tu código o Face ID para abrirse, oculta su contenido en el selector de apps y limita los intentos fallidos de código.</p>
+
+    <h2>5. Face ID y código de acceso</h2>
+    <p>Face ID lo gestiona iOS: tus datos biométricos permanecen en el Secure Enclave del dispositivo y la app nunca accede a ellos ni los almacena; solo recibe la confirmación de si la autenticación ha sido correcta. El código de seis dígitos de la app no se guarda en texto plano: se utiliza únicamente para proteger la clave de cifrado.</p>
+
+    <h2>6. Exportación de documentos</h2>
+    <p>Si exportas un expediente a PDF o Word, el archivo se genera en tu dispositivo y eres tú quien decide, mediante el menú Compartir de iOS, dónde enviarlo o guardarlo (correo, Archivos, servicios en la nube, etc.). A partir de ese momento, el tratamiento de ese archivo depende del destino que hayas elegido y queda bajo tu responsabilidad.</p>
+
+    <h2>7. Datos que no recopilamos</h2>
+    <p>La app no recopila datos de identificación, de contacto, de ubicación, de uso ni de diagnóstico; no utiliza cookies, identificadores publicitarios ni SDK de terceros; y no comparte ni vende información a terceros. Tampoco necesita conexión a internet para funcionar.</p>
+
+    <h2>8. Datos tratados a través de Apple (App Store y TestFlight)</h2>
+    <p>Anamnesi se distribuye a través del App Store y, durante la fase de pruebas, de TestFlight, servicios de Apple sujetos a su propia <a href="https://www.apple.com/legal/privacy/">política de privacidad</a>.</p>
+    <p>Si participas en las pruebas de TestFlight, Apple recopila y comparte con el desarrollador:</p>
+    <ul>
+      <li>el nombre y el correo electrónico con los que fuiste invitado (no se comparten si entraste mediante un enlace público);</li>
+      <li>el modelo de dispositivo y la versión de iOS;</li>
+      <li>los registros de fallos y datos de uso de la versión de prueba;</li>
+      <li>los comentarios y capturas de pantalla que envíes voluntariamente.</li>
+    </ul>
+    <p>Usamos esta información únicamente para corregir errores y mejorar la app, sobre la base de nuestro interés legítimo en el correcto funcionamiento de la versión que has aceptado probar. No la compartimos con terceros, la conservamos solo mientras dure el programa de pruebas y el tiempo necesario para resolver los errores notificados, y después la eliminamos.</p>
+    <p class="note"><strong>Importante:</strong> no incluyas datos reales de pacientes en las capturas de pantalla ni en los comentarios que envíes como feedback, ya que esa información se comparte con Apple y con el desarrollador.</p>
+    <p>Si en los Ajustes de iOS has permitido compartir datos de análisis con los desarrolladores, Apple puede facilitarnos informes de fallos y de uso. Puedes desactivarlo en Ajustes › Privacidad y seguridad › Análisis y mejoras.</p>
+
+    <h2>9. Responsabilidad sobre los datos de pacientes</h2>
+    <p>Anamnesi es una herramienta de documentación para profesionales sanitarios. El profesional que la utiliza decide qué información introduce y con qué finalidad, y es el responsable del tratamiento de los datos de sus pacientes conforme al Reglamento General de Protección de Datos (RGPD), la normativa española de protección de datos y la normativa sanitaria aplicable. El desarrollador no tiene acceso a esa información ni la trata en ningún momento.</p>
+    <p>Anamnesi no realiza diagnósticos, no interpreta los datos introducidos ni ofrece recomendaciones clínicas.</p>
+
+    <h2>10. Conservación y eliminación de los datos</h2>
+    <p>Los expedientes permanecen en tu dispositivo hasta que los elimines. Los expedientes borrados pasan a la papelera de la app durante 7 días y después se eliminan de forma definitiva; también puedes vaciar la papelera en cualquier momento. Al desinstalar la app se eliminan todos sus datos.</p>
+    <p>Las copias de seguridad de iOS pueden incluir el archivo cifrado, pero como la clave no se transfiere a otros dispositivos, no puede abrirse fuera del iPhone en el que se creó. El desarrollador no dispone de copias de tus datos y no puede recuperarlos si se pierden.</p>
+
+    <h2>11. Tus derechos</h2>
+    <p>Como los datos de la app están solo en tu dispositivo, tienes control total sobre ellos: puedes consultarlos, modificarlos, exportarlos o eliminarlos en cualquier momento desde la propia app.</p>
+    <p>Respecto a los datos que recibimos a través de TestFlight, puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a <a class="email" href="mailto:enriquerodrigopardo@gmail.com">enriquerodrigopardo@gmail.com</a>. Puedes dejar de participar en las pruebas cuando quieras desde la app TestFlight y gestionar los datos que conserva Apple en <a href="https://privacy.apple.com">privacy.apple.com</a>. Si consideras que no hemos tratado tus datos correctamente, puedes presentar una reclamación ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+    <h2>12. Menores de edad</h2>
+    <p>Anamnesi está dirigida a profesionales sanitarios y no está destinada a menores de edad.</p>
+
+    <h2>13. Cambios en esta política</h2>
+    <p>Si modificamos esta política, publicaremos la nueva versión en la app y en esta página y actualizaremos la fecha de «Última actualización». Si los cambios son relevantes, lo indicaremos también en las notas de la actualización de la app.</p>
+
+    <h2>14. Contacto</h2>
+    <p>Para cualquier duda sobre esta política o sobre la privacidad en Anamnesi, escríbenos a <a class="email" href="mailto:enriquerodrigopardo@gmail.com">enriquerodrigopardo@gmail.com</a>.</p>
+  </article>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <article class="doc" id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="updated sans">Last updated: October 24, 2026</p>
+
+    <p class="lead">Anamnesi keeps everything you write encrypted and only on your iPhone. There are no servers, no accounts, and no one, including the developer, can access your records.</p>
+
+    <h2>1. Who we are</h2>
+    <p>Anamnesi is an iPhone app developed by Enrique Rodrigo, an independent developer based in Spain (“the developer”, “we” or “us”). You can contact us at <a class="email" href="mailto:enriquerodrigopardo@gmail.com">enriquerodrigopardo@gmail.com</a> about anything related to this policy.</p>
+
+    <h2>2. Summary</h2>
+    <p>Anamnesi does not collect, transmit or sell personal data. Everything you enter is stored encrypted only on your iPhone. The app has no servers or user accounts, contains no advertising, analytics or third-party tracking tools, and the developer cannot access your records.</p>
+
+    <h2>3. Information you enter in the app</h2>
+    <p>The records you create (questionnaire answers, clinical notes, age, sex, dates and identifiers) are stored exclusively in your device’s local storage. This information never leaves your iPhone unless you choose to export it.</p>
+    <p>Anamnesi is designed not to store patient names: each record is identified by a code or record number, and the app also automatically detects and hides personal names typed into text fields. This analysis happens entirely on the device, without sending the text to any external service.</p>
+
+    <h2>4. Security</h2>
+    <p>Data is encrypted with AES-256-GCM and additionally protected by iOS file protection. The encryption key is stored in the device’s Keychain and is never transferred to other devices. The app locks automatically after a period of inactivity, requires your code or Face ID to open, hides its content in the app switcher and limits failed code attempts.</p>
+
+    <h2>5. Face ID and passcode</h2>
+    <p>Face ID is handled by iOS: your biometric data stays in the device’s Secure Enclave and the app never accesses or stores it; it only receives confirmation of whether authentication succeeded. The app’s six-digit code is not stored in plain text: it is used only to protect the encryption key.</p>
+
+    <h2>6. Exporting documents</h2>
+    <p>If you export a record to PDF or Word, the file is generated on your device and you decide, through the iOS Share menu, where to send or save it (email, Files, cloud services, etc.). From then on, how that file is handled depends on the destination you chose and is your responsibility.</p>
+
+    <h2>7. Data we do not collect</h2>
+    <p>The app does not collect identifiers, contact details, location, usage or diagnostic data; it does not use cookies, advertising identifiers or third-party SDKs; and it does not share or sell information to third parties. It also does not need an internet connection to work.</p>
+
+    <h2>8. Data handled through Apple (App Store and TestFlight)</h2>
+    <p>Anamnesi is distributed through the App Store and, during the testing phase, TestFlight, which are Apple services subject to Apple’s own <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.</p>
+    <p>If you take part in TestFlight testing, Apple collects and shares with the developer:</p>
+    <ul>
+      <li>the name and email address you were invited with (not shared if you joined through a public link);</li>
+      <li>your device model and iOS version;</li>
+      <li>crash logs and usage data for the beta version;</li>
+      <li>any feedback and screenshots you choose to send.</li>
+    </ul>
+    <p>We use this information only to fix bugs and improve the app, based on our legitimate interest in the proper functioning of the version you agreed to test. We do not share it with third parties, we keep it only for the duration of the testing programme and as long as needed to resolve reported issues, and then we delete it.</p>
+    <p class="note"><strong>Important:</strong> do not include real patient data in the screenshots or comments you send as feedback, as that information is shared with Apple and with the developer.</p>
+    <p>If you have allowed sharing analytics with app developers in iOS Settings, Apple may provide us with crash and usage reports. You can turn this off in Settings › Privacy &amp; Security › Analytics &amp; Improvements.</p>
+
+    <h2>9. Responsibility for patient data</h2>
+    <p>Anamnesi is a documentation tool for healthcare professionals. The professional using it decides what information to enter and for what purpose, and is the controller of their patients’ data under the General Data Protection Regulation (GDPR), Spanish data protection law and applicable healthcare regulations. The developer has no access to that information and does not process it at any time.</p>
+    <p>Anamnesi does not make diagnoses, interpret the data entered or provide clinical recommendations.</p>
+
+    <h2>10. Data retention and deletion</h2>
+    <p>Records stay on your device until you delete them. Deleted records go to the app’s trash for 7 days and are then permanently deleted; you can also empty the trash at any time. Uninstalling the app deletes all of its data.</p>
+    <p>iOS backups may include the encrypted file, but because the key is never transferred to other devices, it cannot be opened outside the iPhone on which it was created. The developer has no copies of your data and cannot recover it if it is lost.</p>
+
+    <h2>11. Your rights</h2>
+    <p>Because the app’s data is only on your device, you have full control over it: you can view, edit, export or delete it at any time from within the app.</p>
+    <p>Regarding the data we receive through TestFlight, you can exercise your rights of access, rectification, erasure, objection, restriction of processing and portability by writing to <a class="email" href="mailto:enriquerodrigopardo@gmail.com">enriquerodrigopardo@gmail.com</a>. You can stop taking part in testing at any time from the TestFlight app and manage the data Apple holds at <a href="https://privacy.apple.com">privacy.apple.com</a>. If you believe we have not handled your data properly, you can lodge a complaint with the <a href="https://www.aepd.es/en">Spanish Data Protection Agency</a>.</p>
+
+    <h2>12. Children</h2>
+    <p>Anamnesi is intended for healthcare professionals and is not directed at minors.</p>
+
+    <h2>13. Changes to this policy</h2>
+    <p>If we change this policy, we will publish the new version in the app and on this page and update the “Last updated” date. If the changes are significant, we will also mention them in the app’s update notes.</p>
+
+    <h2>14. Contact</h2>
+    <p>For any questions about this policy or about privacy in Anamnesi, write to us at <a class="email" href="mailto:enriquerodrigopardo@gmail.com">enriquerodrigopardo@gmail.com</a>.</p>
+  </article>
+
+  <footer class="sans">
+    <p>© 2026 Enrique Rodrigo. Anamnesi para iPhone.</p>
+  </footer>
+</main>
+</body>
+</html>
